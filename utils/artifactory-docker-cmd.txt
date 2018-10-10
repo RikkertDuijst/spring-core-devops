@@ -26,3 +26,8 @@ ubuntu@ip-172-31-34-41:~$ cat /etc/apache2/sites-available/Artifactory.conf
     ProxyPassReverse /artifactory http://artifactory.nexii.nl/artifactory
 </VirtualHost>
 
+<VirtualHost *:80>
+    ProxyPreserveHost On
+    ProxyPass /artifactory http://localhost:8081/artifactory
+    ProxyPassReverse / http://localhost:8081/artifactory
+</VirtualHost>
