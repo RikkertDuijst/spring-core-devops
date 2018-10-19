@@ -29,7 +29,7 @@ grant all privileges on springguru.* to 'spring_guru_owner'@'localhost' identifi
 
 
 #Bash env
-export SPRING_DATASOURCE_URL=jdbc:mysql://52.91.138.232:3306/springguru
+export SPRING_DATASOURCE_URL=jdbc:mysql://18.224.2.20:3306/springguru
 export SPRING_DATASOURCE_USERNAME=spring_guru_owner
 export SPRING_DATASOURCE_PASSWORD="GuruPassword"
 
@@ -39,4 +39,4 @@ grant all privileges on springguru.* to 'spring_guru_owner'@'%' identified by "G
 FLUSH PRIVILEGES;
 
 #run command
-java -jar ./spring-core-devops-0.0.1.jar --spring.jpa.hibernate.ddl-auto=update
+java -jar ./spring-core-devops-0.0.2.jar --spring.jpa.hibernate.ddl-auto=update

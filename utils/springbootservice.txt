@@ -15,10 +15,10 @@ Description=Spring Boot Service
 After=syslog.target
 
 [Service]
-User=ec2-user
+User=ubuntu
 # set dir to location of application.properties and springboot jar
-WorkingDirectory=/home/ec2-user
-ExecStart=/bin/java -jar spring-core-devops-0.0.1.jar
+WorkingDirectory=/home/ubuntu
+ExecStart=/usr/bin/java -jar spring-core-devops-0.0.2.jar
 SuccessExitStatus=143
 
 [Install]
